@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📱 Teen Phone Addiction Survey</title>
+  <style>
+    body {
+      background: #1a1a2e;
+      color: #eaeaea;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00c8ff;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #16213e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .question {
+      margin-bottom: 1.5em;
+    }
+    .question h2 {
+      font-size: 1.2em;
+      color: #fffffe;
+    }
+    .options label {
+      display: block;
+      margin: 8px 0;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .options input {
+      margin-right: 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      resize: vertical;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: #1a1a2e;
+      background: #00c8ff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #00a3cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Teen Phone Addiction Pulse Check</h1>
+  <form action="https://example.com/submit" method="POST">
+    
+    <div class="question">
+      <h2>1. How many hours do you think an average teen spends on their phone each day?</h2>
+      <div class="options">
+        <label><input type="radio" name="q1" value="<2"> Less than 2 hours</label>
+        <label><input type="radio" name="q1" value="2-4"> 2–4 hours</label>
+        <label><input type="radio" name="q1" value="4-6"> 4–6 hours</label>
+        <label><input type="radio" name="q1" value=">6"> More than 6 hours 😱</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. What’s the first thing you do when you wake up?</h2>
+      <div class="options">
+        <label><input type="radio" name="q2" value="check_phone"> Check my phone 📲</label>
+        <label><input type="radio" name="q2" value="brush_teeth"> Brush my teeth 🪥</label>
+        <label><input type="radio" name="q2" value="talk"> Talk to someone 👋</label>
+        <label><input type="radio" name="q2" value="other"> Something else: <input type="text" name="q2_other" placeholder="What?" style="width:60%;"></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Do you think phone use affects sleep in teenagers?</h2>
+      <div class="options">
+        <label><input type="radio" name="q3" value="yes_lot"> Yes, a lot!</label>
+        <label><input type="radio" name="q3" value="a_little"> Maybe a little</label>
+        <label><input type="radio" name="q3" value="not_really"> Not really</label>
+        <label><input type="radio" name="q3" value="not_at_all"> Not at all</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>4. Which app do you think teens are most “hooked” on?</h2>
+      <div class="options">
+        <label><input type="radio" name="q4" value="tiktok"> TikTok 🌀</label>
+        <label><input type="radio" name="q4" value="instagram"> Instagram 📸</label>
+        <label><input type="radio" name="q4" value="snapchat"> Snapchat 👻</label>
+        <label><input type="radio" name="q4" value="youtube"> YouTube ▶️</label>
+        <label><input type="radio" name="q4" value="other"> Other (please specify):</label>
+        <textarea name="q4_other" rows="2" placeholder="Your answer..."></textarea>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>5. Imagine 24 hours without your phone. How would you feel?</h2>
+      <div class="options">
+        <label><input type="radio" name="q5" value="relaxed"> Free and relaxed 😌</label>
+        <label><input type="radio" name="q5" value="bored"> Bored 😐</label>
+        <label><input type="radio" name="q5" value="anxious"> Anxious 😬</label>
+        <label><input type="radio" name="q5" value="fine"> Totally fine 😎</label>
+      </div>
+    </div>
+
+    <button type="submit">Submit & See Live Results!</button>
+  </form>
+</body>
+</html>
